@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="uk"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Відгуки — Beauty by Lilia</title><link rel="stylesheet" href="style.css"/></head><body>
+<html lang="ук"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Відгуки — Beauty by Lilia</title><link rel="stylesheet" href="style.css"></head><body>
 <a class="visually-hidden" href="#main">Перейти до основного вмісту</a>
 
 <header>
@@ -9,39 +10,37 @@
       <span>Beauty by Lilia</span>
     </a>
     <nav class="menu" id="menu">
+      <a href="index.html">Головна</a>
       <a href="services.html">Послуги</a>
       <a href="about.html">Про мене</a>
       <a href="reviews.html">Відгуки</a>
       <a href="contacts.html">Контакти</a>
-      <a class="cta" href="contacts.html#booking">Онлайн-запис</a>
+      <a class="cta" href="booking.html">Запис</a>
     </nav>
     <button class="hamb" id="hamb" aria-label="Меню" aria-controls="menu" aria-expanded="false">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M3 6h18M3 12h18M3 18h18"/>
-      </svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
   </div>
 </header>
 
-<main id="main">
-  <section><div class="container">
-    <h1>Відгуки</h1><p class="sub">Кілька прикладів для демонстрації (замініть на реальні відгуки за потреби).</p>
-    <div class="testimonials">
-      <blockquote>“Дуже приємно і професійно. Після чистки шкіра стала гладкішою!”<footer>— Марина, 24 роки</footer></blockquote>
-      <blockquote>“Ламінування брів — супер! Акуратно, природно, тримається довго.”<footer>— Софія, 19 років</footer></blockquote>
-      <blockquote>“Спокійна атмосфера і чіткі рекомендації для домашнього догляду.”<footer>— Оксана, 31 рік</footer></blockquote>
-    </div>
-  </div></section>
-</main>
+<main id="main"><section><div class="container">
+  <h1>Відгуки клієнток</h1><p class="sub">Декілька прикладів для сайту (замініть на реальні).</p>
+  <div class="testimonials">
+    <blockquote>“Дуже приємно і професійно. Після чистки шкіра стала гладкішою!”<footer>— Марина, 24 роки</footer></blockquote>
+    <blockquote>“Ламінування брів — супер! Акуратно, природно, тримається довго.”<footer>— Софія, 19 років</footer></blockquote>
+    <blockquote>“Затишна атмосфера і корисні рекомендації для домашнього догляду.”<footer>— Оксана, 31 рік</footer></blockquote>
+  </div>
+</div></section></main>
 
 <footer>
-  <div class="container">
-    © 2025 Beauty by Lilia
-  </div>
+  <div class="container">© 2025 Beauty by Lilia • Created by Liliia Klius</div>
 </footer>
 <script>
   const hamb = document.getElementById('hamb');
   const menu = document.getElementById('menu');
-  if(hamb && menu){ hamb.addEventListener('click', ()=>{ const open = menu.classList.toggle('open'); hamb.setAttribute('aria-expanded', String(open)); }); }
+  if(hamb && menu){ hamb.addEventListener('click', ()=>{
+    const open = menu.classList.toggle('open');
+    hamb.setAttribute('aria-expanded', String(open));
+  }); }
 </script>
 </body></html>

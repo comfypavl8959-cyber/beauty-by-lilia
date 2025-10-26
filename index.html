@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="uk"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Beauty by Lilia — Косметолог</title><link rel="stylesheet" href="style.css"/></head><body>
+<html lang="uk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beauty by Lilia — Косметолог Павлоград</title><link rel="stylesheet" href="style.css"></head><body>
 <a class="visually-hidden" href="#main">Перейти до основного вмісту</a>
 
 <header>
@@ -9,45 +10,48 @@
       <span>Beauty by Lilia</span>
     </a>
     <nav class="menu" id="menu">
+      <a href="index.html">Головна</a>
       <a href="services.html">Послуги</a>
       <a href="about.html">Про мене</a>
       <a href="reviews.html">Відгуки</a>
       <a href="contacts.html">Контакти</a>
-      <a class="cta" href="contacts.html#booking">Онлайн-запис</a>
+      <a class="cta" href="booking.html">Запис</a>
     </nav>
     <button class="hamb" id="hamb" aria-label="Меню" aria-controls="menu" aria-expanded="false">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M3 6h18M3 12h18M3 18h18"/>
-      </svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
   </div>
 </header>
 
 <main id="main">
-  <section class="hero"><div class="container"><img class="hero-banner" src="images/hero.png" alt="Ніжний рожевий банер косметологічного салону"></div></section>
+  <section class="hero"><div class="container"><img class="hero-banner" src="hero.png" alt="Ніжний рожевий банер косметологічного салону"></div></section>
   <section><div class="container cols">
-    <div><h1>Косметолог, якому довіряють</h1><p class="sub">Делікатний професійний догляд: чистка, пілінги, ламінування брів та шугаринг.</p>
-      <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="cta" href="contacts.html#booking">Записатися</a><a class="cta alt" href="services.html">Переглянути послуги</a></div>
+    <div>
+      <h1>Косметолог, якому довіряють</h1>
+      <p class="sub">Делікатний професійний догляд: чистка, пілінги, ламінування брів, шугаринг та інші процедури для сяючої шкіри.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="cta" href="booking.html">Записатися зараз</a><a class="cta alt" href="services.html">Переглянути послуги</a></div>
     </div>
-    <div class="card"><h3>Чому обирають нас?</h3><ul style="margin:0;padding-left:18px">
-      <li>Стерильність та одноразові матеріали</li><li>М’які та ефективні протоколи</li><li>Сертифіковані засоби</li><li>Комфорт і увага до деталей</li>
-    </ul></div></div></section>
-  <section><div class="container"><h2>Популярні послуги</h2><p class="sub">Короткий перелік улюблених процедур наших клієнток.</p>
+    <div class="card"><h3>Чому обирають Beauty by Lilia?</h3><ul style="margin:0;padding-left:18px">
+      <li>Стерильність, одноразові матеріали</li><li>М’які та ефективні протоколи</li><li>Сертифіковані засоби</li><li>Комфорт і турбота</li>
+    </ul></div>
+  </div></section>
+  <section><div class="container"><h2>Популярні послуги</h2><p class="sub">Короткий перелік улюблених процедур.</p>
     <div class="grid">
-      <article class="card"><h3>Чистка обличчя</h3><p>Глибоке очищення пор, маска та завершальний догляд.</p><p class="price">від 500 грн</p></article>
-      <article class="card"><h3>Пілінг</h3><p>Делікатне оновлення шкіри для рівного тону.</p><p class="price">від 400 грн</p></article>
-      <article class="card"><h3>Ламінування брів</h3><p>Акуратна форма, блиск і фіксація волосків.</p><p class="price">350 грн</p></article>
+      <article class="card"><h3>Чистка обличчя</h3><p>Глибоке очищення, маска та завершальний догляд.</p><p class="price">від 600 грн</p></article>
+      <article class="card"><h3>Ультразвуковий пілінг</h3><p>Делікатне оновлення та вирівнювання тону.</p><p class="price">550 грн</p></article>
+      <article class="card"><h3>Ламінування брів</h3><p>Акуратна форма та фіксація волосків.</p><p class="price">400 грн</p></article>
     </div></div></section>
 </main>
 
 <footer>
-  <div class="container">
-    © 2025 Beauty by Lilia
-  </div>
+  <div class="container">© 2025 Beauty by Lilia • Created by Liliia Klius</div>
 </footer>
 <script>
   const hamb = document.getElementById('hamb');
   const menu = document.getElementById('menu');
-  if(hamb && menu){ hamb.addEventListener('click', ()=>{ const open = menu.classList.toggle('open'); hamb.setAttribute('aria-expanded', String(open)); }); }
+  if(hamb && menu){ hamb.addEventListener('click', ()=>{
+    const open = menu.classList.toggle('open');
+    hamb.setAttribute('aria-expanded', String(open));
+  }); }
 </script>
 </body></html>

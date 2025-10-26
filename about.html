@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="uk"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Про мене — Beauty by Lilia</title><link rel="stylesheet" href="style.css"/></head><body>
+<html lang="uk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Про мене — Beauty by Lilia</title><link rel="stylesheet" href="style.css"></head><body>
 <a class="visually-hidden" href="#main">Перейти до основного вмісту</a>
 
 <header>
@@ -9,16 +10,15 @@
       <span>Beauty by Lilia</span>
     </a>
     <nav class="menu" id="menu">
+      <a href="index.html">Головна</a>
       <a href="services.html">Послуги</a>
       <a href="about.html">Про мене</a>
       <a href="reviews.html">Відгуки</a>
       <a href="contacts.html">Контакти</a>
-      <a class="cta" href="contacts.html#booking">Онлайн-запис</a>
+      <a class="cta" href="booking.html">Запис</a>
     </nav>
     <button class="hamb" id="hamb" aria-label="Меню" aria-controls="menu" aria-expanded="false">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M3 6h18M3 12h18M3 18h18"/>
-      </svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
   </div>
 </header>
@@ -27,23 +27,24 @@
   <section><div class="container cols">
     <div>
       <h1>Про мене</h1>
-      <p class="sub">Мене звати <strong>Лілія</strong>. Я косметолог, який любить свою справу та дбає про комфорт клієнток.</p>
-      <p>Працюю з чутливою шкірою й акне, підбираю щадні та ефективні протоколи. Пояснюю кожен етап процедури та даю прості рекомендації для домашнього догляду.</p>
-      <ul><li>Сертифікати: естетична косметологія, гігієна та стерильність</li><li>Підхід: делікатність, безпека та результат</li><li>Комунікація: турбота та уважність до деталей</li></ul>
+      <p class="sub">Мене звати <strong>Лілія Клюс</strong>. Я косметолог з Павлограда, який піклується про комфорт і результат.</p>
+      <p>Закінчила <strong>Бахмутський фаховий медичний коледж</strong>, здобула фахову освіту та сертифікацію з косметології. Постійно вдосконалюю знання на курсах і семінарах, щоб пропонувати найсучасніші й делікатні методи догляду.</p>
+      <ul><li>Працюю з чутливою шкірою та акне</li><li>Стерильність і безпека — пріоритет</li><li>Індивідуальні протоколи під ваші потреби</li></ul>
       <p><strong>Instagram:</strong> <a href="https://instagram.com/klius.liliia" target="_blank" rel="noopener">@klius.liliia</a></p>
     </div>
-    <div><img class="hero-banner" src="images/about.png" alt="Плейсхолдер для фото косметолога"></div>
+    <div><img class="hero-banner" src="photo.jpg" alt="Liliia Klius — косметолог Павлоград"></div>
   </div></section>
 </main>
 
 <footer>
-  <div class="container">
-    © 2025 Beauty by Lilia
-  </div>
+  <div class="container">© 2025 Beauty by Lilia • Created by Liliia Klius</div>
 </footer>
 <script>
   const hamb = document.getElementById('hamb');
   const menu = document.getElementById('menu');
-  if(hamb && menu){ hamb.addEventListener('click', ()=>{ const open = menu.classList.toggle('open'); hamb.setAttribute('aria-expanded', String(open)); }); }
+  if(hamb && menu){ hamb.addEventListener('click', ()=>{
+    const open = menu.classList.toggle('open');
+    hamb.setAttribute('aria-expanded', String(open));
+  }); }
 </script>
 </body></html>
