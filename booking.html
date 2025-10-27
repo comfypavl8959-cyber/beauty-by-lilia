@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<html lang="ук"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="uk"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" href="favicon.ico">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Онлайн-запис — Beauty by Lilia</title><link rel="stylesheet" href="style.css"></head><body>
 <a class="visually-hidden" href="#main">Перейти до основного вмісту</a>
 
@@ -13,6 +18,7 @@
       <a href="index.html">Головна</a>
       <a href="services.html">Послуги</a>
       <a href="about.html">Про мене</a>
+      <a href="gallery.html">Галерея</a>
       <a href="reviews.html">Відгуки</a>
       <a href="contacts.html">Контакти</a>
       <a class="cta" href="booking.html">Запис</a>
@@ -24,16 +30,19 @@
 </header>
 
 <main id="main">
+
   <section><div class="container">
     <h1>Онлайн-запис</h1>
     <p class="sub">Заповніть форму — я зв’яжусь із вами для підтвердження зручного часу 💕</p>
     <div class="embed"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdzPCYOe3TvMGoO0q-rAmyZXaiclT-r3MMv3to0Thm86N1cug/viewform?embedded=true" width="100%" height="820" frameborder="0" marginheight="0" marginwidth="0">Завантаження…</iframe></div>
   </div></section>
+
 </main>
 
 <footer>
   <div class="container">© 2025 Beauty by Lilia • Created by Liliia Klius</div>
 </footer>
+<button id="top" aria-label="До гори">↑</button>
 <script>
   const hamb = document.getElementById('hamb');
   const menu = document.getElementById('menu');
@@ -41,5 +50,14 @@
     const open = menu.classList.toggle('open');
     hamb.setAttribute('aria-expanded', String(open));
   }); }
+  document.getElementById('top').addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'}));
+  const lb = document.getElementById('lightbox');
+  if(lb){
+    lb.addEventListener('click', (e)=>{ if(e.target===lb) lb.classList.remove('open'); });
+    document.querySelectorAll('[data-lightbox]').forEach(el=>{
+      el.addEventListener('click', ()=>{ lb.querySelector('img').src = el.src; lb.classList.add('open'); });
+    });
+  }
 </script>
+
 </body></html>
