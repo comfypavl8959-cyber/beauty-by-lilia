@@ -26,3 +26,5 @@ section{padding:60px 0}h1{font-size:clamp(30px,2.8vw + 16px,48px);line-height:1.
 footer{padding:36px 0 64px;color:var(--muted);text-align:center;border-top:1px solid rgba(0,0,0,.06)}#top{position:fixed;right:20px;bottom:20px;padding:10px 12px;border-radius:999px;background:#fff;border:1px solid #eee;box-shadow:var(--shadow);cursor:pointer}
 @media (max-width:900px){.grid{grid-template-columns:1fr 1fr}.testimonials{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}.cols,.contact-grid{grid-template-columns:1fr}}
 @media (max-width:600px){.grid{grid-template-columns:1fr}.testimonials{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.menu{display:none;position:absolute;right:20px;top:72px;background:#fff;border:1px solid #eee;border-radius:12px;box-shadow:var(--shadow);padding:10px;flex-direction:column;min-width:230px}.menu.open{display:flex}.hamb{display:inline-flex}}
+
+.gallery figure{margin:0}.gallery figcaption{text-align:center;color:#6f6f6f;margin-top:6px;font-size:.95rem}
